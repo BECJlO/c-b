@@ -2,5 +2,20 @@ mixin header()
   +b.HEADER.header(id="header")
     .container
       +e.wrap
-        +e.A(href="").logo
-          +e.IMG(src="img/logo.jpg" alt="logo").logo-img
+        +e.A(href="").logo Charge-backs
+          //- +e.IMG(src="img/logo.jpg" alt="logo").logo-img
+        +e.NAV.nav
+          +e.UL.nav-list
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link Home
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link Features
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link What is chargeback
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link About us
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link FAQ
+            +e.LI.nav-item
+              +e.A(href="").nav-item-link Contact us
+        +e.BUTTON.callme-btn.main-s-btn Call me

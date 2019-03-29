@@ -1,7 +1,8 @@
 .header
   width: 100%
-  height: 76px
-  background: white
+  height: 85px
+  background-color: #FFFFFF
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.21)
   @media #{$_md}
     height: 65px
   @media #{$_sm}
@@ -9,3 +10,36 @@
     height: auto
   @media #{$_xs}
     padding: 15px 0
+  &__wrap
+    display: flex
+    height: 100%
+    // justify-content: space-between
+    align-items: center
+  &__logo
+    display: block
+    font-size: 23px
+    font-weight: 600
+    line-height: 17px
+    color: #2A2A2A
+  &__nav
+    margin-left: auto
+    margin-right: 0
+    &-list
+      display: flex
+    &-item
+      margin-right: 49px
+      &-link
+        font-size: 16px
+        font-weight: 500
+        letter-spacing: 0.89px
+        line-height: 22px
+        transition: color .3s
+        &:hover
+          color: $ly-color
+  &__callme-btn
+    height: 44px
+    width: 160px
+    border-radius: 26px
+    background-color: #FFCF42
+    &:hover
+      box-shadow: 0 2px 14px 0 #FFCF42

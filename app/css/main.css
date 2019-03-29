@@ -142,6 +142,27 @@ a {
 
 /***********************COLORS & FONTS***********************/
 
+@font-face {
+  font-family: "AvenirNext-DemiBold";
+  src: url("../fonts/AvenirNext-DemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirNext-Medium";
+  src: url("../fonts/AvenirNext-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Medium";
+  src: url("../fonts/HelveticaNeueCyr-Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
 html,
 body,
 div,
@@ -223,16 +244,16 @@ time,
 mark,
 audio,
 video {
-  font-family: "AvenirNextCyr-Medium", Helvetica, sans-serif;
+  font-family: "AvenirNext-Medium", Helvetica, sans-serif;
   color: black;
 }
 
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 1264px;
+  max-width: 1248px;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 button {
@@ -244,8 +265,65 @@ button {
 
 .header {
   width: 100%;
-  height: 76px;
-  background: white;
+  height: 85px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.21);
+}
+
+.header__wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #2A2A2A;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.header__nav-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 49px;
+}
+
+.header__nav-item-link {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.89px;
+  line-height: 22px;
+  transition: color .3s;
+}
+
+.header__nav-item-link:hover {
+  color: #FFCF42;
+}
+
+.header__callme-btn {
+  height: 44px;
+  width: 160px;
+  border-radius: 26px;
+  background-color: #FFCF42;
+}
+
+.header__callme-btn:hover {
+  box-shadow: 0 2px 14px 0 #FFCF42;
 }
 
 @media (max-width: 1024px) {
