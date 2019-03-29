@@ -994,3 +994,32 @@
 // });
 
 
+$(document).ready(function () {
+  var firstScreenSwiper = new Swiper('.first-screen__offer-container', {
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: '.first-screen__offer-nav-next',
+      prevEl: '.first-screen__offer-nav-prev',
+		},
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 35
+      }
+    }
+  });
+});

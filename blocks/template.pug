@@ -3,6 +3,8 @@ include _assets/bemto/bemto
 
 include head/head
 include header/header
+include first-screen/first-screen
+
 
 doctype html
 html(lang="ru")
@@ -16,8 +18,8 @@ html(lang="ru")
 			})
 			
 		+b.BODY.page
-			block header
-				+header()
+			block first-screen
+				+first-screen()
 			
 			block content
 				
@@ -25,7 +27,7 @@ html(lang="ru")
 				// build:js js/vendor.js
 				script( src="libs/jquery/dist/jquery.min.js")
 				//- script( src="libs/fancybox/dist/jquery.fancybox.min.js")
-				//- script( src="libs/swiper/dist/js/swiper.min.js")
+				script( src="libs/swiper/dist/js/swiper.min.js")
 				//- script( src="libs/parsleyjs/dist/parsley.min.js")
 				// endbuild
 

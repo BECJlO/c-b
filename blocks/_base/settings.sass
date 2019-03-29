@@ -37,6 +37,9 @@ button
 //   &:hover
 //     background-color: #ffc10c
 
+.main-s-btn
+  background-color: $ly-color
+
 // .custom-swiper-nav
 //   position: absolute
 //   width: calc(100% / 96 * 100 + 120px)
@@ -49,68 +52,61 @@ button
 //     display: none
 //   @media #{$_sm}
 //   @media #{$_xs}
-// .custom-swiper-prev, .custom-swiper-next
-//   z-index: 100
-//   position: relative
-//   display: flex
-//   justify-content: center
-//   align-items: center
-//   width: 44px
-//   height: 44px
-//   border-radius: 50%
-//   background-color: #f3f3f6
-//   transition: background-color .3s
-//   cursor: pointer
-// .custom-swiper-prev-icon, .custom-swiper-next-icon
-//   position: absolute
-//   @media #{$_md}
-//   @media #{$_sm}
-//   @media #{$_xs}
+.custom-swiper-prev, .custom-swiper-next
+  z-index: 100
+  position: relative
+  width: 44px
+  height: 44px
+  border-radius: 50%
+  background-color: rgba(37, 37, 37, 0.05)
+  transition: background-color .3s
+  cursor: pointer
+.custom-swiper-prev-icon, .custom-swiper-next-icon
+  opacity: 0.38
+  color: $lb-color
+  position: absolute
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
 
-// .custom-swiper-prev
-//   margin-right: auto
-//   display: none
+.custom-swiper-prev:hover
+  background-color: #ffcf42
+  & .custom-swiper-prev-icon
+    color: black
 
-// .custom-swiper-prev:hover
-//   background-color: #ffcf42
-//   & .custom-swiper-prev-icon
-//     color: black
+.custom-swiper-next:hover
+  background-color: #ffcf42
+  & .custom-swiper-next-icon
+    color: black
 
-// .custom-swiper-next:hover
-//   background-color: #ffcf42
-//   & .custom-swiper-next-icon
-//     color: black
+.custom-swiper-prev-icon
+  top: 9px
+  left: 9px
 
-// .custom-swiper-prev-icon
-//   top: 9px
-//   left: 9px
-//   color: #ceceda
+.custom-swiper-next-icon
+  top: 9px
+  right: 9px
 
-// .custom-swiper-next-icon
-//   top: 9px
-//   right: 9px
-//   color: #ceceda
+@font-face
+  font-family: 'Material Icons'
+  font-style: normal
+  font-weight: 400
+  src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2')
 
-// @font-face
-//   font-family: 'Material Icons'
-//   font-style: normal
-//   font-weight: 400
-//   src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2')
-
-// .material-icons
-//   font-family: 'Material Icons'
-//   font-weight: normal
-//   font-style: normal
-//   font-size: 24px
-//   line-height: 1
-//   letter-spacing: normal
-//   text-transform: none
-//   display: inline-block
-//   white-space: nowrap
-//   word-wrap: normal
-//   direction: ltr
-//   -webkit-font-feature-settings: 'liga'
-//   -webkit-font-smoothing: antialiased
+.material-icons
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px
+  line-height: 1
+  letter-spacing: normal
+  text-transform: none
+  display: inline-block
+  white-space: nowrap
+  word-wrap: normal
+  direction: ltr
+  -webkit-font-feature-settings: 'liga'
+  -webkit-font-smoothing: antialiased
 
 // .parsley-pattern, .parsley-required, .parsley-type
 //   margin: 8px 0
