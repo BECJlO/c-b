@@ -4,6 +4,7 @@ include _assets/bemto/bemto
 include head/head
 include header/header
 include first-screen/first-screen
+include qualities/qualities
 
 
 doctype html
@@ -12,7 +13,7 @@ html(lang="ru")
 	block head
 		head
 			+head({
-				"title": "Luna",
+				"title": "Title",
 				"author": "Oleh Devolp",
 				"description": "Landing"
 			})
@@ -20,6 +21,9 @@ html(lang="ru")
 		+b.BODY.page
 			block first-screen
 				+first-screen()
+
+			block qualities
+				+qualities()
 			
 			block content
 				

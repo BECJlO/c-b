@@ -39,6 +39,10 @@ button
 
 .main-s-btn
   background-color: $ly-color
+  border: 2px solid #000000
+  &:hover
+    background-color: rgba(255, 207, 66, 0.8)
+
 
 // .custom-swiper-nav
 //   position: absolute
@@ -57,35 +61,36 @@ button
   position: relative
   width: 44px
   height: 44px
+  border: 2px solid #000000
   border-radius: 50%
-  background-color: rgba(37, 37, 37, 0.05)
+  // background-color: rgba(37, 37, 37white
   transition: background-color .3s
   cursor: pointer
+  outline: none
 .custom-swiper-prev-icon, .custom-swiper-next-icon
-  opacity: 0.38
-  color: $lb-color
+  color: #020202
   position: absolute
   @media #{$_md}
   @media #{$_sm}
   @media #{$_xs}
 
 .custom-swiper-prev:hover
-  background-color: #ffcf42
+  background-color: white
   & .custom-swiper-prev-icon
     color: black
 
 .custom-swiper-next:hover
-  background-color: #ffcf42
+  background-color: white
   & .custom-swiper-next-icon
     color: black
 
 .custom-swiper-prev-icon
-  top: 9px
-  left: 9px
+  top: 8px
+  left: 8px
 
 .custom-swiper-next-icon
-  top: 9px
-  right: 9px
+  top: 8px
+  right: 8px
 
 @font-face
   font-family: 'Material Icons'

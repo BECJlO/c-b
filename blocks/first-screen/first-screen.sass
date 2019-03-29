@@ -1,18 +1,21 @@
 .first-screen
   position: relative
   width: 100%
-  background-color: #815bbf
+  background-color: #373C75
   &__wrap
-    padding: 0 
-    padding-left: 100px
+    display: flex
+    justify-content: space-between
+    padding: 0
     padding-top: 7.2%
     height: 447px
+  &__main-text
+    z-index: 2
+    max-width: 469px
   &__title
-    // margin-top: 88px
     font-size: 44px
     font-weight: 600
     line-height: 60px
-    color: white
+    color: $ly-color
   &__subtitle
     max-width: 414px
     margin-top: 8px
@@ -26,27 +29,44 @@
     margin-top: 56px
     border-radius: 43px
     font-size: 23px
-    font-weight: 500
+    font-weight: 600
     line-height: 31px
     text-align: center
-    color: $lb-color
+    text-transform: uppercase
+    color: black
     &:hover
-      box-shadow: 0 7px 14px 0 rgba(183,231,93,0.38)
+      // box-shadow: 0 7px 14px 0 rgba(183,231,93,0.38)
   &__decor
+    z-index: 1
     position: absolute
-    bottom: 29px
-    right: 220px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    display: flex
+    justify-content: center
+    align-items: center
     &-img
-      background-image: url(../re.ge)
-    &-text
-      position: relative
-      botom: 0
-      max-width: 301px
+      width: 32%
+      padding-top: 32%
+      background-image: url(../img/decor/knight.png)
+      background-size: contain
+      background-repeat: no-repeat
+  &__add-text
+    z-index: 2
+    padding-top: 30px
+    &-small
+      margin-bottom: 8px
       opacity: 0.7
       font-size: 14px
       font-weight: 500
-      line-height: 23px
-      text-align: right
+      line-height: 25px
+      color: white
+    &-big
+      max-width: 398px
+      font-size: 34px
+      font-weight: 500
+      line-height: 45px
       color: white
   &__offer
     height: 85px
@@ -74,6 +94,9 @@
       justify-content: center
       align-items: center
       width: 544px
+      font-family: $HNC-font
+      font-size: 18px
+      font-weight: 500
   &__offer-nav-prev
     margin-left: 191+17px
   &__offer-nav-next

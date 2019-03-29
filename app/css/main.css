@@ -265,6 +265,11 @@ button {
 
 .main-s-btn {
   background-color: #FFCF42;
+  border: 2px solid #000000;
+}
+
+.main-s-btn:hover {
+  background-color: rgba(255, 207, 66, 0.8);
 }
 
 .custom-swiper-prev,
@@ -273,21 +278,21 @@ button {
   position: relative;
   width: 44px;
   height: 44px;
+  border: 2px solid #000000;
   border-radius: 50%;
-  background-color: rgba(37, 37, 37, 0.05);
   transition: background-color .3s;
   cursor: pointer;
+  outline: none;
 }
 
 .custom-swiper-prev-icon,
 .custom-swiper-next-icon {
-  opacity: 0.38;
-  color: #252525;
+  color: #020202;
   position: absolute;
 }
 
 .custom-swiper-prev:hover {
-  background-color: #ffcf42;
+  background-color: white;
 }
 
 .custom-swiper-prev:hover .custom-swiper-prev-icon {
@@ -295,7 +300,7 @@ button {
 }
 
 .custom-swiper-next:hover {
-  background-color: #ffcf42;
+  background-color: white;
 }
 
 .custom-swiper-next:hover .custom-swiper-next-icon {
@@ -303,13 +308,13 @@ button {
 }
 
 .custom-swiper-prev-icon {
-  top: 9px;
-  left: 9px;
+  top: 8px;
+  left: 8px;
 }
 
 .custom-swiper-next-icon {
-  top: 9px;
-  right: 9px;
+  top: 8px;
+  right: 8px;
 }
 
 @font-face {
@@ -378,7 +383,7 @@ button {
 .header__nav-item-link {
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.89px;
+  letter-spacing: 1px;
   line-height: 22px;
   transition: color .3s;
 }
@@ -392,34 +397,42 @@ button {
   width: 160px;
   border-radius: 26px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 25px;
+  letter-spacing: 1.07px;
+  text-transform: uppercase;
   color: #111111;
   transition: box-shadow .3s;
-}
-
-.header__callme-btn:hover {
-  box-shadow: 0 2px 14px 0 #FFCF42;
 }
 
 .first-screen {
   position: relative;
   width: 100%;
-  background-color: #815bbf;
+  background-color: #373C75;
 }
 
 .first-screen__wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0;
-  padding-left: 100px;
   padding-top: 7.2%;
   height: 447px;
+}
+
+.first-screen__main-text {
+  z-index: 2;
+  max-width: 469px;
 }
 
 .first-screen__title {
   font-size: 44px;
   font-weight: 600;
   line-height: 60px;
-  color: white;
+  color: #FFCF42;
 }
 
 .first-screen__subtitle {
@@ -437,35 +450,58 @@ button {
   margin-top: 56px;
   border-radius: 43px;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 31px;
   text-align: center;
-  color: #252525;
-}
-
-.first-screen__freecons-btn:hover {
-  box-shadow: 0 7px 14px 0 rgba(183, 231, 93, 0.38);
+  text-transform: uppercase;
+  color: black;
 }
 
 .first-screen__decor {
+  z-index: 1;
   position: absolute;
-  bottom: 29px;
-  right: 220px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .first-screen__decor-img {
-  background-image: url(../re.ge);
+  width: 32%;
+  padding-top: 32%;
+  background-image: url(../img/decor/knight.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.first-screen__decor-text {
-  position: relative;
-  botom: 0;
-  max-width: 301px;
+.first-screen__add-text {
+  z-index: 2;
+  padding-top: 30px;
+}
+
+.first-screen__add-text-small {
+  margin-bottom: 8px;
   opacity: 0.7;
   font-size: 14px;
   font-weight: 500;
-  line-height: 23px;
-  text-align: right;
+  line-height: 25px;
+  color: white;
+}
+
+.first-screen__add-text-big {
+  max-width: 398px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 45px;
   color: white;
 }
 
@@ -517,6 +553,9 @@ button {
   -ms-flex-align: center;
   align-items: center;
   width: 544px;
+  font-family: "HelveticaNeueCyr-Medium", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .first-screen__offer-nav-prev {
