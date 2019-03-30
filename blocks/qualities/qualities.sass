@@ -1,5 +1,5 @@
 .qualities
-  padding: 83px 0 120px
+  padding: 67px 0 83px
   @media #{$_md}
     padding: 70px 0 100px
   @media #{$_sm}
@@ -26,9 +26,10 @@
       font-size: 16px
       line-height: 20px
     @media #{$_sm}
-      max-width: 250px
+      max-width: 350px
       margin: 10px auto 0
     @media #{$_xs}
+      max-width: 250px
   &__list
     display: flex
     margin-top: 27px
@@ -42,7 +43,7 @@
     display: flex
     width: (100% / 3)
     margin-top: 40px
-    padding-right: 30px
+    // padding-right: 30px
     @media #{$_md}
       width: (100% / 2)
     @media #{$_sm}
@@ -51,16 +52,27 @@
       flex-direction: column
     @media #{$_xs}
     &-icon
-      height: 65px
-      margin-right: 25px
+      height: 85px
+      margin-right: 22px
       @media #{$_md}
       @media #{$_sm}
         margin: 0 auto
       @media #{$_xs}
       svg
         height: 100%
+    &:first-child .qualities__item-icon
+      padding-top: 4px
+      margin-left: -2px
+      margin-right: 24px
+    &:nth-child(2n) .qualities__item-icon
+      padding-top: 2px
+      padding-left: 7px
+    &:nth-child(3n) .qualities__item-icon
+      padding-left: 16px
     &-content
+      max-width: 276px
     &-title
+      margin-top: 2px
       font-size: 24px
       font-weight: 600
       line-height: 33px
@@ -71,7 +83,7 @@
         text-align: center
       @media #{$_xs}
     &-text
-      margin-top: 1px
+      margin-top: 7px
       font-size: 16px
       font-weight: 500
       line-height: 22px
@@ -80,6 +92,7 @@
         line-height: 20px
       @media #{$_sm}
         max-width: 250px
+        margin-top: 7px
         margin-left: auto
         margin-right: auto
         text-align: center

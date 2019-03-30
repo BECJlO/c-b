@@ -1,4 +1,6 @@
 .header
+  position: relative
+  z-index: 1000
   width: 100%
   height: 85px
   background-color: #FFFFFF
@@ -7,7 +9,7 @@
     height: 65px
   @media #{$_sm}
     padding: 20px 0
-    height: auto
+    // height: auto
   @media #{$_xs}
     padding: 15px 0
   &__wrap
@@ -15,6 +17,8 @@
     height: 100%
     // justify-content: space-between
     align-items: center
+    @media #{$_sm}
+      justify-content: space-between
   &__logo
     margin-right: 40px
     display: block
@@ -23,16 +27,71 @@
     line-height: 17px
     color: #2A2A2A
     white-space: nowrap
+    @media #{$_sm}
+      width: calc(100% / 3)
+      margin-right: 0
+      font-size: 21px
   &__menu-btn
     display: none
+    width: calc(100% / 3)
+    height: 40px
     @media #{$_sm}
-      display: block
+      // z-index: 100
+      display: flex
+      justify-content: flex-end
+      align-items: center
     @media #{$_xs}
+      width: auto
+    &-gumb
+      position: relative
+      display: block
+      height: 2px
+      width: 20px
+      margin-top: 2px
+      margin-right: 10px
+      border-radius: 2px
+      background-color: black
+      &:before
+        position: absolute
+        content: ""
+        display: block
+        top: -4px
+        height: 2px
+        width: 20px
+        border-radius: 2px
+        background-color: black
+      &:after
+        position: absolute
+        content: ""
+        display: block
+        bottom: -4px
+        height: 2px
+        width: 20px
+        border-radius: 2px
+        background-color: black
+    &-text
+      font-size: 16px
+      font-weight: 600
   &__nav
     margin-left: auto
     margin-right: 0
+    @media #{$_sm}
+      display: none
+      position: absolute
+      top: 45px
+      left: 0
+      width: 100%
+      height: 100vh
+      background-color: #fff
+    &.active
+      display: block
     &-list
       display: flex
+      @media #{$_sm}
+        margin-top: 50px
+        height: 100%
+        flex-direction: column
+      @media #{$_xs}
     &-item
       display: flex
       align-items: center
@@ -43,6 +102,9 @@
       @media #{$_md}
         margin-right: 20px
       @media #{$_sm}
+        margin-top: 20px
+        margin-right: 0
+        text-align: center
       @media #{$_xs}
       &-link
         font-size: 16px
@@ -55,10 +117,14 @@
         @media #{$_md}
           font-size: 14px
         @media #{$_sm}
+          margin: auto
+          font-size: 16px
+          font-weight: 600
         @media #{$_xs}
         &:hover
           color: $ly-color
   &__callme-btn
+    display: block
     height: 44px
     width: 160px
     border-radius: 26px
@@ -74,5 +140,44 @@
       height: 40px
       width: 150px
       font-size: 16px
+    @media (max-width: 920px)
+      display: none
     @media #{$_sm}
+      display: block
+      width: 200px
+      // margin-left: -130px
     @media #{$_xs}
+      display: none
+  &__menu-btn.active
+    & .header__menu-btn-text
+      display: none
+    & .header__menu-btn-gumb
+      margin-right: 0
+      background-color: transparent
+    & .header__menu-btn-gumb:after
+      transform: rotate(-45deg)
+      bottom: 0px
+      animation-name: bottom-line
+      animation-duration: 1s
+    & .header__menu-btn-gumb:before
+      transform: rotate(45deg)
+      top: 0
+      animation-name: top-line
+      animation-duration: 1s
+
+@keyframes top-line
+  from
+    top: -4px
+    transform: rotate(0deg)
+  to
+    top: 0
+    transform: rotate(45deg)
+
+@keyframes bottom-line
+  from
+    bottom: -4px
+    transform: rotate(0deg)
+  to
+    bottom: 0
+    transform: rotate(-45deg)
+

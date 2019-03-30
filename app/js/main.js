@@ -1022,4 +1022,23 @@ $(document).ready(function () {
       }
     }
   });
+
+  // mob menu
+  var mobileWrapper = $('.header__nav');
+  var body = $('body');
+  var checkOpen = false;
+  $(".header__menu-btn").click(function () {
+    var hamburger = $(this);
+    if (checkOpen) {
+      mobileWrapper.removeClass('active');
+      hamburger.removeClass('active');
+      body.removeClass('modal-opened');
+      checkOpen = false;
+    } else {
+      mobileWrapper.addClass('active');
+      hamburger.addClass('active');
+      body.addClass('modal-opened');
+      checkOpen = true;
+    }
+  });
 });

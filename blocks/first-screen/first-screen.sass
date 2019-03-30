@@ -2,12 +2,23 @@
   position: relative
   width: 100%
   background-color: #373C75
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
   &__wrap
     display: flex
     justify-content: space-between
     padding: 0
-    padding-top: 7.2%
+    padding-top: 7.22%
     height: 447px
+    @media #{$_md}
+    @media #{$_sm}
+      height: 400px
+    @media (max-width: 667px)
+      height: 380px
+    @media #{$_xs}
+      padding-top: 50px
+      height: 350px
   &__main-text
     z-index: 2
     max-width: 469px
@@ -15,25 +26,51 @@
     font-size: 44px
     font-weight: 600
     line-height: 60px
+    letter-spacing: 0.3px
     color: $ly-color
+    @media #{$_md}
+      max-width: 310px
+      font-size: 40px
+      line-height: 40px
+    @media #{$_sm}
+    @media #{$_xs}
   &__subtitle
-    max-width: 414px
-    margin-top: 8px
+    max-width: 375px
+    margin-top: 7px
+    margin-left: 3px
     font-size: 16px
     font-weight: 500
-    line-height: 23px
+    line-height: 25px
     color: white
+    @media #{$_md}
+      font-size: 14px
+      line-height: 20px
+    @media #{$_sm}
+    @media #{$_xs}
   &__freecons-btn
-    width: 318px
+    width: 350px
     height: 77px
     margin-top: 45px
+    margin-left: 3px
     border-radius: 43px
-    font-size: 23px
+    font-size: 20px
     font-weight: 600
     line-height: 31px
+    letter-spacing: 0.56px
     text-align: center
     text-transform: uppercase
     color: black
+    @media #{$_md}
+      width: 255px
+      height: 60px
+      font-size: 20px
+    @media (max-width: 920px)
+      margin-top: 58px
+    @media #{$_sm}
+      height: 50px
+      font-size: 16px
+      margin-right: 30px
+    @media #{$_xs}
     &:hover
       // box-shadow: 0 7px 14px 0 rgba(183,231,93,0.38)
   &__decor
@@ -46,32 +83,60 @@
     display: flex
     justify-content: center
     align-items: center
+    @media (max-width: 920px)
+      justify-content: flex-end
+    @media (max-width: 550px)
+      display: none
     &-img
-      width: 35%
-      padding-top: 35%
+      width: 35.2%
+      padding-top: 35.2%
       margin-top: 5px
-      margin-right: 60px
+      margin-right: 26px
       background-image: url(../img/decor/knight.png)
       background-size: cover
       background-repeat: no-repeat
+      @media (max-width: 920px)
+        width: 45%
+        padding-top: 45%
+      @media #{$_sm}
+        margin-top: 30px
+      @media (max-width: 667px)
+        margin-top: 48px
+        margin-right: 30px
+      
   &__add-text
     z-index: 2
     padding-top: 30px
+    @media (max-width: 920px)
+      display: none
     &-small
-      margin-bottom: 8px
+      margin-bottom: 13px
       opacity: 0.7
-      font-size: 14px
+      font-size: 16px
       font-weight: 500
       line-height: 25px
       color: white
+      @media #{$_md}
+        font-size: 13px
+        line-height: 20px
+      @media #{$_sm}
+      @media #{$_xs}
     &-big
-      max-width: 398px
+      max-width: 381px
       font-size: 34px
       font-weight: 500
       line-height: 45px
       color: white
+      @media (max-width: 1160px)
+        max-width: 320px
+      @media #{$_md}
+        max-width: 290px
+        font-size: 29px
+        line-height: 35px
+      @media #{$_sm}
+      @media #{$_xs}
   &__offer
-    height: 85px
+    height: 104px
     background-color: #ECECEC
     &-cont
       display: flex
@@ -85,12 +150,15 @@
       width: 544px
       justify-content: space-between
       align-items: center
+      @media #{$_sm}
+        width: calc(100% / 1 - 150px )
+      @media #{$_xs}
     &-wrapper
       width: 544px
-    // &-slide
-    //   display: flex
-    //   // justify-content: center
-    //   align-items: center
+      @media #{$_md}
+      @media #{$_sm}
+        width: calc(100% / 1 - 150px )
+      @media #{$_xs}
     &-slide
       display: flex
       justify-content: center
@@ -99,7 +167,25 @@
       font-family: $HNC-font
       font-size: 18px
       font-weight: 500
+      line-height: 20px
+      text-align: center
+      @media #{$_md}
+        font-size: 16px
+      @media #{$_sm}
+      @media #{$_xs}
   &__offer-nav-prev
+    flex-shrink: 0
     margin-left: 191+17px
+    @media #{$_md}
+      margin-left: 100px
+    @media #{$_sm}
+      margin-left: 30px
+    @media #{$_xs}
   &__offer-nav-next
+    flex-shrink: 0
     margin-right: 191+17px
+    @media #{$_md}
+      margin-right: 100px
+    @media #{$_sm}
+      margin-right: 30px
+    @media #{$_xs}
