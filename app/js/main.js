@@ -1030,11 +1030,21 @@ $(document).ready(function () {
   $(".header__menu-btn").click(function () {
     var hamburger = $(this);
     if (checkOpen) {
-      mobileWrapper.removeClass('active');
-      hamburger.removeClass('active');
-      body.removeClass('modal-opened');
+      $('.header__menu-btn-text').css("animation", "buttonr 0.5s");
+      $('.header__menu-btn-line:first-child').addClass('active').css("animation", "top-line-b 0.5s");
+      $('.header__menu-btn-line:last-child').css("animation", "bottom-line-b 0.5s");
+      mobileWrapper.css("animation", "close-menu 0.5s");
+      setTimeout(function () {
+        mobileWrapper.removeClass('active');
+        hamburger.removeClass('active');
+        body.removeClass('modal-opened');
+      }, 500);
       checkOpen = false;
     } else {
+      $('.header__menu-btn-line:first-child').css("animation", "top-line 0.5s");
+      $('.header__menu-btn-line:last-child').css("animation", "bottom-line 0.5s");
+      $('.header__menu-btn-text').css("animation", "buttonl 0.5s");
+      mobileWrapper.css("animation", "open-menu 0.5s");
       mobileWrapper.addClass('active');
       hamburger.addClass('active');
       body.addClass('modal-opened');

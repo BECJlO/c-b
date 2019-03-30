@@ -263,6 +263,10 @@ button {
   outline: none;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 .main-s-btn {
   background-color: #FFCF42;
   border: 2px solid #000000;
@@ -363,9 +367,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  max-width: 100%;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -387,34 +393,33 @@ button {
 .header__menu-btn-gumb {
   position: relative;
   display: block;
-  height: 2px;
+  height: 20px;
   width: 20px;
-  margin-top: 2px;
   margin-right: 10px;
-  border-radius: 2px;
-  background-color: black;
 }
 
-.header__menu-btn-gumb:before {
+.header__menu-btn-line {
   position: absolute;
   content: "";
   display: block;
-  top: -4px;
   height: 2px;
   width: 20px;
   border-radius: 2px;
   background-color: black;
+  transition: opacity 0.5s;
 }
 
-.header__menu-btn-gumb:after {
-  position: absolute;
-  content: "";
-  display: block;
-  bottom: -4px;
-  height: 2px;
-  width: 20px;
-  border-radius: 2px;
-  background-color: black;
+.header__menu-btn-line:first-child {
+  top: 5px;
+}
+
+.header__menu-btn-line:nth-child(2n) {
+  top: 50%;
+  margin-top: -1px;
+}
+
+.header__menu-btn-line:last-child {
+  bottom: 5px;
 }
 
 .header__menu-btn-text {
@@ -428,7 +433,7 @@ button {
 }
 
 .header__nav.active {
-  display: block;
+  right: 0;
 }
 
 .header__nav-list {
@@ -472,76 +477,145 @@ button {
   text-transform: uppercase;
   color: #111111;
   transition: box-shadow .3s;
+  overflow: hidden;
 }
 
 .header__menu-btn.active .header__menu-btn-text {
-  display: none;
+  margin-right: -50px;
 }
 
-.header__menu-btn.active .header__menu-btn-gumb {
-  margin-right: 0;
-  background-color: transparent;
+.header__menu-btn.active .header__menu-btn-line:nth-child(2n) {
+  opacity: 0;
 }
 
-.header__menu-btn.active .header__menu-btn-gumb:after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  bottom: 0px;
-  -webkit-animation-name: bottom-line;
-  animation-name: bottom-line;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.header__menu-btn.active .header__menu-btn-gumb:before {
+.header__menu-btn.active .header__menu-btn-line:first-child {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 0;
-  -webkit-animation-name: top-line;
-  animation-name: top-line;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  top: 9px;
+}
+
+.header__menu-btn.active .header__menu-btn-line:last-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.modal-opened .header__callme-btn {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 70vh;
+  margin-left: -100px;
+  transition: display 1s;
+}
+
+@-webkit-keyframes buttonl {
+  from {
+    margin-right: 0;
+  }
+
+  to {
+    margin-right: -50px;
+  }
+}
+
+@keyframes buttonl {
+  from {
+    margin-right: 0;
+  }
+
+  to {
+    margin-right: -50px;
+  }
+}
+
+@-webkit-keyframes buttonr {
+  from {
+    margin-right: -50px;
+  }
+
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes buttonr {
+  from {
+    margin-right: -50px;
+  }
+
+  to {
+    margin-right: 0;
+  }
 }
 
 @-webkit-keyframes top-line {
   from {
-    top: -4px;
+    top: 5px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    top: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    top: 9px;
   }
 }
 
 @keyframes top-line {
   from {
-    top: -4px;
+    top: 5px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    top: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    top: 9px;
+  }
+}
+
+@-webkit-keyframes top-line-b {
+  from {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  to {
+    top: 5px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes top-line-b {
+  from {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  to {
+    top: 5px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @-webkit-keyframes bottom-line {
   from {
-    bottom: -4px;
+    bottom: 5px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    bottom: 0;
+    bottom: 9px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
@@ -549,15 +623,83 @@ button {
 
 @keyframes bottom-line {
   from {
-    bottom: -4px;
+    bottom: 5px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    bottom: 0;
+    bottom: 9px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes bottom-line-b {
+  from {
+    bottom: 9px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  to {
+    bottom: 5px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom-line-b {
+  from {
+    bottom: 9px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  to {
+    bottom: 5px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes close-menu {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes close-menu {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+
+@-webkit-keyframes open-menu {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes open-menu {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
   }
 }
 
@@ -1254,10 +1396,9 @@ button {
   }
 
   .header__nav {
-    display: none;
     position: absolute;
     top: 45px;
-    left: 0;
+    right: -100%;
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -1284,7 +1425,6 @@ button {
   }
 
   .header__callme-btn {
-    display: block;
     width: 200px;
   }
 
