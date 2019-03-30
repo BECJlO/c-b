@@ -21,6 +21,7 @@ time, mark, audio, video
   height: 100%
   padding: 0 12px
   @media #{$_md}
+    padding: 0 20px
   @media #{$_sm}
   @media #{$_xs}
 
@@ -43,6 +44,12 @@ button
   &:hover
     background-color: rgba(255, 207, 66, 0.8)
 
+.add-s-btn
+  background-color: white
+  border: 2px solid #000000
+  &:hover
+    background-color: $ly-color
+
 
 // .custom-swiper-nav
 //   position: absolute
@@ -59,8 +66,8 @@ button
 .custom-swiper-prev, .custom-swiper-next
   z-index: 100
   position: relative
-  width: 44px
-  height: 44px
+  width: 36px
+  height: 36px
   border: 2px solid #000000
   border-radius: 50%
   // background-color: rgba(37, 37, 37white
@@ -85,12 +92,12 @@ button
     color: black
 
 .custom-swiper-prev-icon
-  top: 8px
-  left: 8px
+  top: 4px
+  left: 3.5px
 
 .custom-swiper-next-icon
-  top: 8px
-  right: 8px
+  top: 4px
+  right: 3.5px
 
 @font-face
   font-family: 'Material Icons'

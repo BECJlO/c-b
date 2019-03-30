@@ -16,24 +16,46 @@
     // justify-content: space-between
     align-items: center
   &__logo
+    margin-right: 40px
     display: block
     font-size: 23px
     font-weight: 600
     line-height: 17px
     color: #2A2A2A
+    white-space: nowrap
+  &__menu-btn
+    display: none
+    @media #{$_sm}
+      display: block
+    @media #{$_xs}
   &__nav
     margin-left: auto
     margin-right: 0
     &-list
       display: flex
     &-item
+      display: flex
+      align-items: center
       margin-right: 49px
+      text-align: center
+      @media #{$_lg}
+        margin-right: 30px
+      @media #{$_md}
+        margin-right: 20px
+      @media #{$_sm}
+      @media #{$_xs}
       &-link
         font-size: 16px
         font-weight: 500
         letter-spacing: 1px
-        line-height: 22px
+        // line-height: 22px
         transition: color .3s
+        text-align: center
+        @media #{$_lg}
+        @media #{$_md}
+          font-size: 14px
+        @media #{$_sm}
+        @media #{$_xs}
         &:hover
           color: $ly-color
   &__callme-btn
@@ -47,3 +69,10 @@
     text-transform: uppercase
     color: #111111
     transition: box-shadow .3s
+    @media #{$_lg}
+    @media #{$_md}
+      height: 40px
+      width: 150px
+      font-size: 16px
+    @media #{$_sm}
+    @media #{$_xs}

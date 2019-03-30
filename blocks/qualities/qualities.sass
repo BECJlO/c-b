@@ -1,0 +1,86 @@
+.qualities
+  padding: 83px 0 120px
+  @media #{$_md}
+    padding: 70px 0 100px
+  @media #{$_sm}
+    padding: 50px 0 80px
+  @media #{$_xs}
+  &__wrap
+  &__title
+    font-size: 38px
+    font-weight: 600
+    line-height: 52px
+    text-align: center
+    @media #{$_md}
+      font-size: 30px
+      line-height: 45px
+    @media #{$_sm}
+    @media #{$_xs}
+  &__subtitle
+    // margin-bottom: 47px
+    font-size: 18px
+    font-weight: 500
+    line-height: 25px
+    text-align: center
+    @media #{$_md}
+      font-size: 16px
+      line-height: 20px
+    @media #{$_sm}
+      max-width: 250px
+      margin: 10px auto 0
+    @media #{$_xs}
+  &__list
+    display: flex
+    margin-top: 27px
+    justify-content: center
+    @media #{$_md}
+      flex-wrap: wrap
+    @media #{$_sm}
+      margin-top: 15px
+    @media #{$_xs}
+  &__item
+    display: flex
+    width: (100% / 3)
+    margin-top: 40px
+    padding-right: 30px
+    @media #{$_md}
+      width: (100% / 2)
+    @media #{$_sm}
+      width: 100%
+      padding-right: 0
+      flex-direction: column
+    @media #{$_xs}
+    &-icon
+      height: 65px
+      margin-right: 25px
+      @media #{$_md}
+      @media #{$_sm}
+        margin: 0 auto
+      @media #{$_xs}
+      svg
+        height: 100%
+    &-content
+    &-title
+      font-size: 24px
+      font-weight: 600
+      line-height: 33px
+      @media #{$_md}
+        font-size: 20px
+        line-height: 25px
+      @media #{$_sm}
+        text-align: center
+      @media #{$_xs}
+    &-text
+      margin-top: 1px
+      font-size: 16px
+      font-weight: 500
+      line-height: 22px
+      @media #{$_md}
+        font-size: 14px
+        line-height: 20px
+      @media #{$_sm}
+        max-width: 250px
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+      @media #{$_xs}

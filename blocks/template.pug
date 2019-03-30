@@ -5,6 +5,9 @@ include head/head
 include header/header
 include first-screen/first-screen
 include qualities/qualities
+include features/features
+include wichargeback/wichargeback
+include aboutus/aboutus
 
 
 doctype html
@@ -19,11 +22,20 @@ html(lang="ru")
 			})
 			
 		+b.BODY.page
-			block first-screen
-				+first-screen()
+			//- block first-screen
+			//- 	+first-screen()
 
-			block qualities
-				+qualities()
+			//- block qualities
+			//- 	+qualities()
+				
+			//- block features
+			//- 	+features()
+
+			block wichargeback
+				+wichargeback()
+
+			//- block aboutus
+			//- 	+aboutus()
 			
 			block content
 				
