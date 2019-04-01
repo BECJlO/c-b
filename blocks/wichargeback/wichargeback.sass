@@ -1,37 +1,48 @@
 .wichargeback
-  padding: 88px 0 107px
+  // padding: 88px 0 107px
   @media #{$_md}
   @media #{$_sm}
   @media #{$_xs}
   &__wrap
+  &__row
+    position: relative
+    height: 412px
   &__question
+    height: 100%
     display: flex
-    // justify-content: space-between
-    align-items: center
-    margin-bottom: 48px
-    @media #{$_md}
-    @media #{$_sm}
-      flex-direction: column
-    @media #{$_xs}
-    &-img
-      background-color: gray //delete
-      position: relative
-      width: 30.56%
-      overflow: hidden
+    justify-content: flex-end
+    &-container
+      display: flex
+      align-items: center
+      width: 50%
+      @media #{$_md}
       @media #{$_sm}
-        margin-bottom: 20px
       @media #{$_xs}
-      &-wrap
-        width: 100%
-        height: 0
-        padding-top: 95.443%
-      &-img
-        position: absolute
-        display: block
-        height: 100%
-        width: 100%
+    &-img
+      position: absolute
+      right: 50%
+      width: 50%
+      height: 100%
+      background-image: url(../img/decor/bitmap.jpg)
+      background-position: center right
+      //   background-color: gray //delete
+      //   position: relative
+      //   width: 30.56%
+      //   overflow: hidden
+      //   @media #{$_sm}
+      //     margin-bottom: 20px
+      //   @media #{$_xs}
+      //   &-wrap
+      //     width: 100%
+      //     height: 0
+      //     padding-top: 95.443%
+      //   &-img
+      //     position: absolute
+      //     display: block
+      //     height: 100%
+      //     width: 100%
     &-context
-      margin-left: 7.8%
+      margin-left: 14.708%
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
@@ -54,16 +65,27 @@
       @media #{$_sm}
       @media #{$_xs}
   &__purpose
+    height: 100%
     display: flex
-    justify-content: space-between
-    align-items: center
-    @media #{$_md}
-    @media #{$_sm}
-      flex-direction: column
-    @media #{$_xs}
-    &-context
+    justify-content: flex-start
+    &-container
+      display: flex
+      align-items: center
+      width: 50%
+      @media #{$_md}
       @media #{$_sm}
-        order: 2
+      @media #{$_xs}
+    &-img
+      position: absolute
+      left: 50%
+      width: 50%
+      height: 100%
+      background-image: url(../img/decor/bitmap.jpg)
+      background-size: cover
+      background-position: center left
+    &-context
+      // margin-left: 14.708%
+      @media #{$_sm}
       @media #{$_xs}
     &-title
     &-text
@@ -82,23 +104,6 @@
       line-height: 22px
       text-align: center
       text-transform: uppercase
-    &-img
-      background-color: gray //delete
-      position: relative
-      width: 50.573%
-      @media #{$_sm}
-        margin-bottom: 20px
-      @media #{$_xs}
-        order: 1
-      &-wrap
-        width: 100%
-        height: 0
-        padding-top: 72.537%
-      &-img
-        position: absolute
-        display: block
-        height: 100%
-        width: 100%
   &-subtitle
     margin-bottom: 22px
     font-size: 24px

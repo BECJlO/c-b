@@ -1033,6 +1033,7 @@ $(document).ready(function () {
       $('.header__menu-btn-text').css("animation", "buttonr 0.5s");
       $('.header__menu-btn-line:first-child').addClass('active').css("animation", "top-line-b 0.5s");
       $('.header__menu-btn-line:last-child').css("animation", "bottom-line-b 0.5s");
+      $('.header__callme-btn').css("animation", "buttonm-b 0.5s");
       mobileWrapper.css("animation", "close-menu 0.5s");
       setTimeout(function () {
         mobileWrapper.removeClass('active');
@@ -1044,6 +1045,7 @@ $(document).ready(function () {
       $('.header__menu-btn-line:first-child').css("animation", "top-line 0.5s");
       $('.header__menu-btn-line:last-child').css("animation", "bottom-line 0.5s");
       $('.header__menu-btn-text').css("animation", "buttonl 0.5s");
+      $('.header__callme-btn').css("animation", "buttonm 1.2s");
       mobileWrapper.css("animation", "open-menu 0.5s");
       mobileWrapper.addClass('active');
       hamburger.addClass('active');

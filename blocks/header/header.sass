@@ -75,7 +75,7 @@
     margin-left: auto
     margin-right: 0
     @media #{$_sm}
-      // display: none
+      display: none
       position: absolute
       top: 45px
       right: -100%
@@ -84,6 +84,7 @@
       // margin-right: -100%
       background-color: #fff
     &.active
+      display: block
       right: 0
     &-list
       display: flex
@@ -143,12 +144,13 @@
       font-size: 16px
     @media (max-width: 920px)
       display: none
+      position: absolute
+      left: 150%
+      top: 70vh
+      margin-left: -100px
     @media #{$_sm}
-      // display: block
       width: 200px
-      // margin-left: -130px
     @media #{$_xs}
-      display: none
   &__menu-btn.active
     & .header__menu-btn-text
       margin-right: -50px
@@ -162,14 +164,19 @@
       bottom: 9px
 .modal-opened .header__callme-btn
   display: block
-  position: absolute
   left: 50%
-  top: 70vh
-  margin-left: -100px
-  transition: display 1s
 
 
-
+@keyframes buttonm
+  from
+    left: 150%
+  to
+    left: 50%
+@keyframes buttonm-b
+  from
+    left: 50%
+  to
+    left: 150%
 @keyframes buttonl
   from
     margin-right: 0

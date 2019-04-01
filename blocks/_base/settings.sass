@@ -31,7 +31,7 @@ button
   cursor: pointer
   outline: none
 
-.modal-open
+.modal-opened
   overflow: hidden
 
 // .main-btn-slyle
@@ -122,6 +122,35 @@ button
   direction: ltr
   -webkit-font-feature-settings: 'liga'
   -webkit-font-smoothing: antialiased
+
+.main-s-title
+  font-size: 38px
+  font-weight: 600
+  line-height: 52px
+  text-align: center
+  @media #{$_md}
+    font-size: 30px
+    line-height: 45px
+  @media #{$_sm}
+  @media #{$_xs}
+  
+.add-s-title
+  margin-top: 2px
+  font-size: 24px
+  font-weight: 600
+  line-height: 33px
+  @media #{$_md}
+    font-size: 20px
+    line-height: 25px
+  @media #{$_sm}
+    text-align: center
+  @media #{$_xs}
+
+.main-s-subtitle
+  font-size: 18px
+  font-weight: 500
+  line-height: 25px
+  text-align: center
 
 // .parsley-pattern, .parsley-required, .parsley-type
 //   margin: 8px 0
