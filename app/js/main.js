@@ -1081,4 +1081,16 @@ $(document).ready(function () {
       checkOpen = true;
     }
   });
+
+  $(".faq__item-arrow").click(function() {
+    var arrow = $(this);
+    var item = $(this).closest(".faq__item");
+    var ansver = $(this).closest(".faq__item").children(".faq__item-ansver");
+    if(arrow.hasClass("open")){arrow.removeClass("open");}
+    else{arrow.toggleClass("open");}
+    ansver.slideToggle("slow");
+    if(item.hasClass("drop")){item.removeClass("drop");}
+    else{item.toggleClass("drop");}
+    return false;
+  });
 });

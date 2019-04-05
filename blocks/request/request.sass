@@ -1,0 +1,108 @@
+.request
+  padding: 72px 0 90px
+  background-color: #373C75
+  &__wrap
+    max-width: 1016px
+    margin: 0 auto
+  &__title
+    margin-bottom: 25px
+    font-size: 38px
+    font-weight: 600
+    letter-spacing: 1.06px
+    line-height: 52px
+    text-align: center
+    color: white
+  &__form
+    padding: 64px 80px 45px
+    background-color: #fff
+    &-wrap
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      height: 94 * 3 + px
+      margin: 0 -30px
+    &-message-wrap
+    &-btn-block
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 43px
+    &-btn-text
+      font-size: 20px
+      font-weight: 500
+      line-height: 27px
+      text-align: center
+    &-btn
+      height: 45px
+      width: 200px
+      margin-left: 27px
+      border: 2px solid #000000
+      border-radius: 42.5px
+      background-color: #FFCF42
+      font-size: 20px
+      font-weight: 600
+      letter-spacing: 0.87px
+      line-height: 27px
+      text-align: center
+  &__input
+    &-block
+      height: 94px
+      margin: 0 30px
+    &-label
+      display: block
+      margin-bottom: 7px
+      font-size: 14px
+      font-weight: 600
+      line-height: 19px
+    &-input
+      height: 45px
+      width: 100%
+      padding: 0 23px
+      border: 2px solid #000000
+      border-radius: 22.5px
+      background-color: #FFFFFF
+      font-size: 20px
+      font-weight: 500
+      line-height: 27px
+      outline: none
+      transition: background-color .1s
+      &:hover
+        background-color: #F4F5F9
+      &:focus
+        background-color: #DFE0E7
+    &-message
+      padding-top: 10px
+      font-family: $ANM-font
+      height: 123px
+    &-error
+      margin-top: 4px
+      font-size: 14px
+      font-weight: 600
+      line-height: 19px
+      text-align: right
+      color: #FF4242
+  &__info
+    display: flex
+    margin-top: 57px
+    &-item
+    &-header
+      display: flex
+      margin-bottom: 14px
+      align-items: center
+    &-icon
+      margin-right: 24px
+    &-title
+      max-width: 134px
+      font-size: 20px
+      font-weight: 600
+      line-height: 27px
+      color: white
+    &-text
+      padding-right: 77px
+      font-size: 16px
+      font-weight: 500
+      line-height: 22px
+      color: white
+.input-required:after
+  content: '*'
+  color: #FF426A

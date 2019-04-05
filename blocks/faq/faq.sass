@@ -29,7 +29,10 @@
         line-height: 33px
   &__item
     margin-bottom: 8px
+    border: 2px solid rgba(244,245,249,1)
     background-color: rgba(244,245,249,1)
+    &.drop
+      background-color: white
     &-question
       position: relative
       padding: 20px 75px 27px 35px
@@ -37,6 +40,7 @@
       font-weight: 600
       line-height: 27px
     &-ansver
+      padding: 7px 16px 24px 32px
       display: none
       font-size: 16px
       font-weight: 500
@@ -50,7 +54,10 @@
       width: 36px
       border: 2px solid black
       border-radius: 18px
+      transition: background-color .2s
       // background-color: rgba(255,255,255,1)
+      &:hover
+        background-color: white
       &:before
         position: absolute
         display: none
@@ -91,6 +98,12 @@
         direction: ltr
         -webkit-font-feature-settings: 'liga'
         -webkit-font-smoothing: antialiased
+      &.open
+        // background-color: red
+        & .faq__item-arrow:after
+          display: none
+        & .faq__item-arrow:before
+          display: block
   &__offer
     height: 104px
     background-color: #ECECEC
