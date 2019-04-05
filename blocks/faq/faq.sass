@@ -1,0 +1,150 @@
+.faq
+  &__wrap
+    padding: 77px 0 84px
+  &__title
+    margin-bottom: 74px
+    font-size: 38px
+    font-weight: 600
+    letter-spacing: 1.06px
+    line-height: 52px
+    text-align: center
+  &__container
+    display: flex
+    margin: 0 -12px
+  &__block
+    width: calc(100% / 3)
+    margin: 0 12px
+    &-title
+      display: flex
+      align-items: center
+      min-height: 87px
+      margin-bottom: 23px
+      &-icon
+        margin-right: 25px
+        padding-bottom: 12px
+      &-text
+        max-width: 200px
+        font-size: 24px
+        font-weight: 600
+        line-height: 33px
+  &__item
+    margin-bottom: 8px
+    background-color: rgba(244,245,249,1)
+    &-question
+      position: relative
+      padding: 20px 75px 27px 35px
+      font-size: 20px
+      font-weight: 600
+      line-height: 27px
+    &-ansver
+      display: none
+      font-size: 16px
+      font-weight: 500
+      line-height: 22px
+    &-arrow
+      position: absolute
+      display: block
+      top: 16px
+      right: 16px
+      height: 36px
+      width: 36px
+      border: 2px solid black
+      border-radius: 18px
+      // background-color: rgba(255,255,255,1)
+      &:before
+        position: absolute
+        display: none
+        // display: block
+        top: 4px
+        right: 3px
+        content: "keyboard_arrow_up"
+        font-family: 'Material Icons'
+        font-weight: normal
+        font-style: normal
+        font-size: 24px
+        line-height: 1
+        letter-spacing: normal
+        text-transform: none
+        // display: inline-block
+        white-space: nowrap
+        word-wrap: normal
+        direction: ltr
+        -webkit-font-feature-settings: 'liga'
+        -webkit-font-smoothing: antialiased
+      &:after
+        position: absolute
+        // display: none
+        display: block
+        top: 4px
+        right: 3px
+        content: "keyboard_arrow_down"
+        font-family: 'Material Icons'
+        font-weight: normal
+        font-style: normal
+        font-size: 24px
+        line-height: 1
+        letter-spacing: normal
+        text-transform: none
+        // display: inline-block
+        white-space: nowrap
+        word-wrap: normal
+        direction: ltr
+        -webkit-font-feature-settings: 'liga'
+        -webkit-font-smoothing: antialiased
+  &__offer
+    height: 104px
+    background-color: #ECECEC
+    &-cont
+      display: flex
+      height: 100%
+      width: 100%
+      justify-content: space-between
+      align-items: center
+    &-container
+      display: flex
+      height: 100%
+      width: 544px
+      justify-content: space-between
+      align-items: center
+      @media #{$_sm}
+        width: calc(100% / 1 - 150px )
+      @media #{$_xs}
+    &-wrapper
+      width: 544px
+      @media #{$_md}
+      @media #{$_sm}
+        width: calc(100% / 1 - 150px )
+      @media #{$_xs}
+    &-slide
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 544px
+      font-family: $HNC-font
+      font-size: 18px
+      font-weight: 500
+      line-height: 20px
+      text-align: center
+      @media #{$_md}
+        font-size: 16px
+      @media #{$_sm}
+      @media #{$_xs}
+  &__offer-nav-prev
+    flex-shrink: 0
+    margin-left: 191+17px
+    @media #{$_md}
+      margin-left: 100px
+    @media #{$_sm}
+      margin-left: 30px
+    @media #{$_xs}
+  &__offer-nav-next
+    flex-shrink: 0
+    margin-right: 191+17px
+    @media #{$_md}
+      margin-right: 100px
+    @media #{$_sm}
+      margin-right: 30px
+    @media #{$_xs}
+  &-icon-1
+  &-icon-2
+  &-icon-3

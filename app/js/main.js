@@ -1023,6 +1023,34 @@ $(document).ready(function () {
     }
   });
 
+  var firstScreenSwiper = new Swiper('.faq__offer-container', {
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: '.faq__offer-nav-next',
+      prevEl: '.faq__offer-nav-prev',
+		},
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 35
+      }
+    }
+  });
+
   // mob menu
   var mobileWrapper = $('.header__nav');
   var body = $('body');

@@ -1354,6 +1354,194 @@ button {
   min-width: 111px;
 }
 
+.faq__wrap {
+  padding: 77px 0 84px;
+}
+
+.faq__title {
+  margin-bottom: 74px;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 1.06px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.faq__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px;
+}
+
+.faq__block {
+  width: calc(100% / 3);
+  margin: 0 12px;
+}
+
+.faq__block-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 87px;
+  margin-bottom: 23px;
+}
+
+.faq__block-title-icon {
+  margin-right: 25px;
+  padding-bottom: 12px;
+}
+
+.faq__block-title-text {
+  max-width: 200px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.faq__item {
+  margin-bottom: 8px;
+  background-color: #f4f5f9;
+}
+
+.faq__item-question {
+  position: relative;
+  padding: 20px 75px 27px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.faq__item-ansver {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.faq__item-arrow {
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 16px;
+  height: 36px;
+  width: 36px;
+  border: 2px solid black;
+  border-radius: 18px;
+}
+
+.faq__item-arrow:before {
+  position: absolute;
+  display: none;
+  top: 4px;
+  right: 3px;
+  content: "keyboard_arrow_up";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.faq__item-arrow:after {
+  position: absolute;
+  display: block;
+  top: 4px;
+  right: 3px;
+  content: "keyboard_arrow_down";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.faq__offer {
+  height: 104px;
+  background-color: #ECECEC;
+}
+
+.faq__offer-cont {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq__offer-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 544px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq__offer-wrapper {
+  width: 544px;
+}
+
+.faq__offer-slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 544px;
+  font-family: "HelveticaNeueCyr-Medium", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.faq__offer-nav-prev {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 208px;
+}
+
+.faq__offer-nav-next {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 208px;
+}
+
 @media (max-width: 1200px) {
   .header__nav-item {
     margin-right: 30px;
@@ -1485,6 +1673,18 @@ button {
     margin-bottom: 35px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .faq__offer-slide {
+    font-size: 16px;
+  }
+
+  .faq__offer-nav-prev {
+    margin-left: 100px;
+  }
+
+  .faq__offer-nav-next {
+    margin-right: 100px;
   }
 }
 
@@ -1642,6 +1842,22 @@ button {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .faq__offer-container {
+    width: calc(100% / 1 - 150px);
+  }
+
+  .faq__offer-wrapper {
+    width: calc(100% / 1 - 150px);
+  }
+
+  .faq__offer-nav-prev {
+    margin-left: 30px;
+  }
+
+  .faq__offer-nav-next {
+    margin-right: 30px;
   }
 }
 
