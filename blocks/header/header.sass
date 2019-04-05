@@ -19,7 +19,7 @@
     max-width: 100%
     // justify-content: space-between
     align-items: center
-    overflow: hidden
+    // overflow: hidden
     @media #{$_sm}
       justify-content: space-between
   &__logo
@@ -30,6 +30,11 @@
     line-height: 17px
     color: #2A2A2A
     white-space: nowrap
+    & svg 
+      height: 100%
+      @media #{$_sm}
+        width: 175px
+        height: 35px
     @media #{$_sm}
       width: calc(100% / 3)
       margin-right: 0
@@ -38,6 +43,7 @@
     display: none
     width: calc(100% / 3)
     height: 40px
+    overflow: hidden
     @media #{$_sm}
       // z-index: 100
       display: flex
