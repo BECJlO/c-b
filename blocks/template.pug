@@ -10,6 +10,8 @@ include wichargeback/wichargeback
 include aboutus/aboutus
 include faq/faq
 include request/request
+include contacts/contacts
+include footer/footer
 
 
 doctype html
@@ -44,9 +46,15 @@ html(lang="ru")
 
 			block request
 				+request()
+
+			block contacts
+				+contacts()
 			
 			block content
 				
+			block footer
+				+footer()
+
 			block vendors
 				// build:js js/vendor.js
 				script( src="libs/jquery/dist/jquery.min.js")

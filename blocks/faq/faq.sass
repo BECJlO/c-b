@@ -98,11 +98,11 @@
         direction: ltr
         -webkit-font-feature-settings: 'liga'
         -webkit-font-smoothing: antialiased
+        opacity: 1
       &.open
-        // background-color: red
-        & .faq__item-arrow:after
+        &:after
           display: none
-        & .faq__item-arrow:before
+        &:before
           display: block
   &__offer
     height: 104px
