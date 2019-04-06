@@ -1593,12 +1593,6 @@ button {
   background-color: #373C75;
 }
 
-.request__wrap {
-  max-width: 1016px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .request__title {
   margin-bottom: 34px;
   font-size: 38px;
@@ -1610,8 +1604,11 @@ button {
 }
 
 .request__form {
+  max-width: 1016px;
+  margin: 0 auto;
   padding: 64px 80px 45px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .request__form-wrap {
@@ -1660,9 +1657,11 @@ button {
   letter-spacing: 0.87px;
   line-height: 27px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .request__input-block {
+  width: calc(100% / 2 - 40px);
   height: 94px;
   margin: 0 30px;
 }
@@ -1716,12 +1715,14 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1016px;
+  margin: 0 auto;
   margin-top: 57px;
-  margin-left: -66px;
+  margin-right: -55px;
 }
 
 .request__info-item {
-  margin-left: 66px;
+  margin-right: 55px;
 }
 
 .request__info-header {
@@ -2001,7 +2002,7 @@ button {
   .wichargeback__question-btn {
     width: 160px;
     height: 40px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .wichargeback__purpose-context {
@@ -2096,6 +2097,61 @@ button {
     margin-right: 100px;
   }
 
+  .request {
+    padding: 65px 0 65px;
+  }
+
+  .request__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .request__form {
+    padding: 45px 60px 40px;
+  }
+
+  .request__form-wrap {
+    height: 240px;
+    margin: 0 -20px;
+  }
+
+  .request__form-btn-block {
+    margin-top: 37px;
+  }
+
+  .request__form-btn-text {
+    font-size: 18px;
+  }
+
+  .request__form-btn {
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .request__input-block {
+    height: 80px;
+    margin: 0 20px;
+  }
+
+  .request__input-input {
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .request__input-message {
+    height: 123px;
+  }
+
+  .request__info {
+    margin-top: 52px;
+  }
+
+  .request__info-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .contacts {
     padding: 70px 0 85px;
   }
@@ -2150,7 +2206,7 @@ button {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .add-s-title {
     text-align: center;
   }
@@ -2375,6 +2431,7 @@ button {
 
   .wichargeback__question-btn {
     margin-bottom: 30px;
+    font-size: 16px;
   }
 
   .wichargeback__purpose {
@@ -2502,6 +2559,86 @@ button {
     margin-right: 30px;
   }
 
+  .request {
+    padding: 55px 0 55px;
+  }
+
+  .request__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .request__form {
+    max-width: 500px;
+    padding: 30px 50px 30px;
+  }
+
+  .request__form-wrap {
+    height: auto;
+  }
+
+  .request__form-btn-block {
+    margin-top: 32px;
+  }
+
+  .request__form-btn-text {
+    font-size: 16px;
+  }
+
+  .request__input-block {
+    width: calc(100% / 1 - 40px);
+  }
+
+  .request__input-label {
+    margin-bottom: 3px;
+  }
+
+  .request__input-input {
+    font-size: 16px;
+  }
+
+  .request__input-message {
+    height: 100px;
+  }
+
+  .request__info {
+    max-width: 500px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .request__info-item {
+    width: 100%;
+    margin-righ: 0;
+    margin-bottom: 20px;
+  }
+
+  .request__info-header {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  .request__info-title {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .request__info-text {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+  }
+
   .contacts {
     padding: 50px 0 60px;
   }
@@ -2520,6 +2657,11 @@ button {
   .contacts__text {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .contacts__text-block {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .contacts__coltwo {
@@ -2763,5 +2905,35 @@ button {
 
   .faq__item-ansver {
     padding: 2px 15px 24px 20px;
+  }
+
+  .request {
+    padding: 45px 0 45px;
+  }
+
+  .request__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .request__form {
+    padding: 20px 20px 30px;
+  }
+
+  .request__form-btn-block {
+    margin-top: 25px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 27px;
+  }
+
+  .request__form-btn {
+    margin-left: 0;
+  }
+
+  .request__info {
+    margin-top: 30px;
   }
 }

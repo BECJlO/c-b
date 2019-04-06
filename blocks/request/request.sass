@@ -1,10 +1,20 @@
 .request
   padding: 72px 0 73px
   background-color: #373C75
+  @media #{$_md}
+    padding: 65px 0 65px
+  @media #{$_sm}
+    padding: 55px 0 55px
+  @media #{$_xs}
+    padding: 45px 0 45px
   &__wrap
-    max-width: 1016px
-    margin: 0 auto
-    overflow: hidden
+    // max-width: 1016px
+    // margin: 0 auto
+    // overflow: hidden
+    // @media #{$_md}
+    // @media #{$_sm}
+    //   max-width: 500px
+    // @media #{$_xs}
   &__title
     margin-bottom: 34px
     font-size: 38px
@@ -13,26 +23,66 @@
     line-height: 52px
     text-align: center
     color: white
+    @media #{$_md}
+      margin-bottom: 30px
+      font-size: 35px
+      line-height: 48px
+    @media #{$_sm}
+      margin-bottom: 25px
+      font-size: 32px
+      line-height: 45px
+    @media #{$_xs}
+      margin-bottom: 20px
+      font-size: 30px
+      line-height: 35px
   &__form
+    max-width: 1016px
+    margin: 0 auto
     padding: 64px 80px 45px
     background-color: #fff
+    overflow: hidden
+    @media #{$_md}
+      padding: 45px 60px 40px
+    @media #{$_sm}
+      max-width: 500px
+      padding: 30px 50px 30px
+    @media #{$_xs}
+      padding: 20px 20px 30px
     &-wrap
       display: flex
       flex-direction: column
       flex-wrap: wrap
       height: 94 * 3 + px
       margin: 0 -30px
+      @media #{$_md}
+        height: 80 * 3 + px
+        margin: 0 -20px
+      @media #{$_sm}
+        height: auto
     &-message-wrap
     &-btn-block
       display: flex
       justify-content: center
       align-items: center
       margin-top: 41px
+      @media #{$_md}
+        margin-top: 37px
+      @media #{$_sm}
+        margin-top: 32px
+      @media #{$_xs}
+        margin-top: 25px
+        flex-direction: column
+        margin-top: 27px
     &-btn-text
       font-size: 20px
       font-weight: 500
       line-height: 27px
       text-align: center
+      @media #{$_md}
+        font-size: 18px
+      @media #{$_sm}
+        font-size: 16px
+      @media #{$_xs}
     &-btn
       height: 45px
       width: 200px
@@ -45,16 +95,34 @@
       letter-spacing: 0.87px
       line-height: 27px
       text-align: center
+      text-transform: uppercase
+      @media #{$_md}
+        height: 40px
+        font-size: 18px
+      @media #{$_sm}
+      @media #{$_xs}
+        margin-left: 0
   &__input
     &-block
+      width: calc(100% / 2 - 40px)
       height: 94px
       margin: 0 30px
+      @media #{$_md}
+        height: 80px
+        margin: 0 20px
+      @media #{$_sm}
+        width: calc(100% / 1 - 40px)
+      @media #{$_xs}
     &-label
       display: block
       margin-bottom: 7px
       font-size: 14px
       font-weight: 600
       line-height: 19px
+      @media #{$_md}
+      @media #{$_sm}
+        margin-bottom: 3px
+      @media #{$_xs}
     &-input
       height: 45px
       width: 100%
@@ -67,6 +135,12 @@
       line-height: 27px
       outline: none
       transition: background-color .1s
+      @media #{$_md}
+        height: 40px
+        font-size: 18px
+      @media #{$_sm}
+        font-size: 16px
+      @media #{$_xs}
       &:hover
         background-color: #F4F5F9
       &:focus
@@ -75,6 +149,11 @@
       padding-top: 10px
       font-family: $ANM-font
       height: 123px
+      @media #{$_md}
+        height: 123px
+      @media #{$_sm}
+        height: 100px
+      @media #{$_xs}
     &-error
       margin-top: 4px
       font-size: 14px
@@ -84,27 +163,69 @@
       color: #FF4242
   &__info
     display: flex
+    max-width: 1016px
+    margin: 0 auto
     margin-top: 57px
-    margin-left: -66px
+    margin-right: -55px
+    @media #{$_md}
+      margin-top: 52px
+    @media #{$_sm}
+      max-width: 500px
+      flex-direction: column
+      margin: 0 auto
+      margin-top: 40px
+    @media #{$_xs}
+      margin-top: 30px
     &-item
-      margin-left: 66px
+      margin-right: 55px
+      @media #{$_md}
+      @media #{$_sm}
+        width: 100%
+        margin-righ: 0
+        margin-bottom: 20px
+      @media #{$_xs}
     &-header
       display: flex
       margin-bottom: 14px
       align-items: center
+      @media #{$_md}
+      @media #{$_sm}
+        flex-direction: column
+        max-width: 300px
+        margin: 0 auto
+        margin-bottom: 5px
+      @media #{$_xs}
     &-icon
       margin-right: 24px
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     &-title
       max-width: 134px
       font-size: 20px
       font-weight: 600
       line-height: 27px
       color: white
+      @media #{$_md}
+        font-size: 18px
+        line-height: 24px
+      @media #{$_sm}
+        max-width: 200px
+        font-size: 16px
+        line-height: 20px
+      @media #{$_xs}
     &-text
       font-size: 16px
       font-weight: 500
       line-height: 22px
       color: white
+      @media #{$_md}
+      @media #{$_sm}
+        max-width: 300px
+        margin: 0 auto
+        font-size: 14px
+        text-align: center
+      @media #{$_xs}
 .input-required:after
   content: '*'
   color: #FF426A
