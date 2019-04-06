@@ -7,52 +7,75 @@
   &__row
     position: relative
     height: 410px
+    @media #{$_md}
+      height: 350px
+    @media #{$_sm}
+      height: auto
+    @media #{$_xs}
+    &:first-child
+      @media (max-width: 920px)
+        height: 300px
+      @media #{$_sm}
+        height: auto
   &__question
     height: 100%
     display: flex
     justify-content: flex-end
+    @media #{$_md}
+    @media #{$_sm}
+      flex-direction: column
+    @media #{$_xs}
     &-container
-      // display: flex
-      // align-items: center
       width: 50%
       @media #{$_md}
       @media #{$_sm}
+        width: 100%
       @media #{$_xs}
     &-img
-      position: absolute
-      right: 50%
       width: 50%
       height: 100%
       background-image: url(../img/decor/wichargeback1.jpg)
       background-position: center right
-      background-size: cover
-      //   background-color: gray //delete
-      //   position: relative
-      //   width: 30.56%
-      //   overflow: hidden
-      //   @media #{$_sm}
-      //     margin-bottom: 20px
-      //   @media #{$_xs}
-      //   &-wrap
-      //     width: 100%
-      //     height: 0
-      //     padding-top: 95.443%
-      //   &-img
-      //     position: absolute
-      //     display: block
-      //     height: 100%
-      //     width: 100%
+      background-size: contain
+      background-repeat: no-repeat
+      @media #{$_sm}
+        width: calc(100% / 1 + 40px)
+        margin-left: -20px
+        margin-right: -20px
+        padding-top: 61%
+        background-color: #F4F5F9
+        background-position: center center
+      @media #{$_xs}
+        padding-top: 67%
+      &-cover
+        position: absolute
+        display: block
+        height: 100%
+        width: 50%
+        background-color: #F4F5F9
+        @media #{$_sm}
+          display: none
     &-context
       margin-top: 81px
       margin-left: 14.708%
       @media #{$_md}
+        margin-top: 50px
       @media #{$_sm}
+        margin-left: 20px
       @media #{$_xs}
+        margin: 45px 20px
     &-title
+      @media #{$_xs}
+        text-align: center
     &-text
       margin-bottom: 32px
       max-width: 424px
+      @media #{$_sm}
+        max-width: 500px
+      @media #{$_xs}
+        text-align: center
     &-btn
+      display: block
       height: 45px
       width: 240px
       border-radius: 26px
@@ -67,32 +90,67 @@
         height: 40px
         font-size: 14px
       @media #{$_sm}
+        margin-bottom: 30px
       @media #{$_xs}
+        margin-left: auto
+        margin-right: auto
   &__purpose
     height: 100%
     display: flex
     justify-content: flex-start
+    @media #{$_sm}
+      flex-direction: column
+    @media #{$_xs}
     &-container
-      // display: flex
-      // align-items: center
       width: 50%
       @media #{$_md}
       @media #{$_sm}
+        order: 2
+        width: 100%
       @media #{$_xs}
     &-img
-      position: absolute
-      left: 50%
+      z-index: 100
       width: 50%
       height: 100%
       background-image: url(../img/decor/wichargeback2.jpg)
-      background-size: cover
+      background-size: contain
       background-position: center left
+      @media #{$_sm}
+        order: 1
+        width: calc(100% / 1 + 40px)
+        margin-left: -20px
+        margin-right: -20px
+        padding-top: 61%
+        background-color: #F4F5F9
+        background-position: center center
+      @media #{$_xs}
+      &-wrap
+        width: 100%
+        height: 0
+        padding-top: 95.443%
+      &-cover
+        z-index: 1
+        position: absolute
+        display: block
+        height: 100%
+        top: 0
+        left: 50%
+        width: 50%
+        background-color: #F4F5F9
+        @media #{$_sm}
+          display: none
     &-context
       margin-top: 64px
       // margin-left: 14.708%
+      @media #{$_md}
+        margin-top: 45px
       @media #{$_sm}
+        margin-left: 20px
       @media #{$_xs}
+        margin: 45px 20px
     &-title
+      @media #{$_xs}
+        text-align: center
     &-text
       max-width: 530px
       margin-bottom: 35px
@@ -100,8 +158,12 @@
         max-width: 300px
         margin-right: 30px
       @media #{$_sm}
+        max-width: 500px
       @media #{$_xs}
+        margin-right: 0
+        text-align: center
     &-btn
+      display: block
       height: 45px
       width: 318px
       border-radius: 26px
@@ -111,6 +173,16 @@
       line-height: 27px
       text-align: center
       text-transform: uppercase
+      @media #{$_md}
+        width: 260px
+        height: 40px
+        font-size: 14px
+      @media #{$_sm}
+        margin-bottom: 30px
+      @media #{$_xs}
+        width: 200px
+        margin-left: auto
+        margin-right: auto
   &-subtitle
     margin-bottom: 22px
     font-size: 24px

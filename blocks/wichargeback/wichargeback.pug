@@ -2,9 +2,10 @@ mixin wichargeback()
   +b.SECTION.wichargeback
       +e.wrap
         +e.row
-          +e.question-img
+          +e.question-img-cover
           .container
             +e.question
+              +e.question-img
               +e.question-container
                 +e.question-context
                   +e.H2.question-title.wichargeback-subtitle What Are Chargebacks?
@@ -17,7 +18,7 @@ mixin wichargeback()
                     |between you and dishonest merchants. 
                   +e.BUTTON.question-btn.add-s-btn Call me now
         +e.row
-          +e.purpose-img
+          +e.purpose-img-cover
           .container
             +e.purpose
               +e.purpose-container
@@ -35,6 +36,7 @@ mixin wichargeback()
                     |funds are removed from the merchant’s 
                     |account and returned to the consumer 
                   +e.BUTTON.purpose-btn.main-s-btn Free Consultation
+              +e.purpose-img
         //- +e.question
         //-   +e.question-img
         //-     +e.question-img-wrap

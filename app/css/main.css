@@ -1169,13 +1169,20 @@ button {
 }
 
 .wichargeback__question-img {
-  position: absolute;
-  right: 50%;
   width: 50%;
   height: 100%;
   background-image: url(../img/decor/wichargeback1.jpg);
   background-position: center right;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wichargeback__question-img-cover {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 50%;
+  background-color: #F4F5F9;
 }
 
 .wichargeback__question-context {
@@ -1189,6 +1196,7 @@ button {
 }
 
 .wichargeback__question-btn {
+  display: block;
   height: 45px;
   width: 240px;
   border-radius: 26px;
@@ -1215,13 +1223,29 @@ button {
 }
 
 .wichargeback__purpose-img {
-  position: absolute;
-  left: 50%;
+  z-index: 100;
   width: 50%;
   height: 100%;
   background-image: url(../img/decor/wichargeback2.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center left;
+}
+
+.wichargeback__purpose-img-wrap {
+  width: 100%;
+  height: 0;
+  padding-top: 95.443%;
+}
+
+.wichargeback__purpose-img-cover {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  background-color: #F4F5F9;
 }
 
 .wichargeback__purpose-context {
@@ -1234,6 +1258,7 @@ button {
 }
 
 .wichargeback__purpose-btn {
+  display: block;
   height: 45px;
   width: 318px;
   border-radius: 26px;
@@ -1945,15 +1970,33 @@ button {
     line-height: 20px;
   }
 
+  .wichargeback__row {
+    height: 350px;
+  }
+
+  .wichargeback__question-context {
+    margin-top: 50px;
+  }
+
   .wichargeback__question-btn {
     width: 160px;
     height: 40px;
     font-size: 14px;
   }
 
+  .wichargeback__purpose-context {
+    margin-top: 45px;
+  }
+
   .wichargeback__purpose-text {
     max-width: 300px;
     margin-right: 30px;
+  }
+
+  .wichargeback__purpose-btn {
+    width: 260px;
+    height: 40px;
+    font-size: 14px;
   }
 
   .wichargeback-subtitle {
@@ -2008,6 +2051,10 @@ button {
 
   .first-screen__add-text {
     display: none;
+  }
+
+  .wichargeback__row:first-child {
+    height: 300px;
   }
 }
 
@@ -2138,6 +2185,90 @@ button {
     text-align: center;
   }
 
+  .wichargeback__row {
+    height: auto;
+  }
+
+  .wichargeback__row:first-child {
+    height: auto;
+  }
+
+  .wichargeback__question {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .wichargeback__question-container {
+    width: 100%;
+  }
+
+  .wichargeback__question-img {
+    width: calc(100% / 1 + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 61%;
+    background-color: #F4F5F9;
+    background-position: center center;
+  }
+
+  .wichargeback__question-img-cover {
+    display: none;
+  }
+
+  .wichargeback__question-context {
+    margin-left: 20px;
+  }
+
+  .wichargeback__question-text {
+    max-width: 500px;
+  }
+
+  .wichargeback__question-btn {
+    margin-bottom: 30px;
+  }
+
+  .wichargeback__purpose {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .wichargeback__purpose-container {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+  }
+
+  .wichargeback__purpose-img {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: calc(100% / 1 + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 61%;
+    background-color: #F4F5F9;
+    background-position: center center;
+  }
+
+  .wichargeback__purpose-img-cover {
+    display: none;
+  }
+
+  .wichargeback__purpose-context {
+    margin-left: 20px;
+  }
+
+  .wichargeback__purpose-text {
+    max-width: 500px;
+  }
+
+  .wichargeback__purpose-btn {
+    margin-bottom: 30px;
+  }
+
   .faq__offer-container {
     width: calc(100% / 1 - 150px);
   }
@@ -2213,5 +2344,45 @@ button {
 
   .qualities__subtitle {
     max-width: 250px;
+  }
+
+  .wichargeback__question-img {
+    padding-top: 67%;
+  }
+
+  .wichargeback__question-context {
+    margin: 45px 20px;
+  }
+
+  .wichargeback__question-title {
+    text-align: center;
+  }
+
+  .wichargeback__question-text {
+    text-align: center;
+  }
+
+  .wichargeback__question-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wichargeback__purpose-context {
+    margin: 45px 20px;
+  }
+
+  .wichargeback__purpose-title {
+    text-align: center;
+  }
+
+  .wichargeback__purpose-text {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .wichargeback__purpose-btn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
