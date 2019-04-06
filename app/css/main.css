@@ -1440,7 +1440,7 @@ button {
 
 .faq__item-question {
   position: relative;
-  padding: 20px 75px 27px 35px;
+  padding: 20px 75px 22px 35px;
   font-size: 20px;
   font-weight: 600;
   line-height: 27px;
@@ -2095,6 +2095,20 @@ button {
   .faq__offer-nav-next {
     margin-right: 100px;
   }
+
+  .contacts {
+    padding: 70px 0 85px;
+  }
+
+  .contacts__logo {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .contacts__title {
+    font-size: 35px;
+    line-height: 48px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -2430,7 +2444,7 @@ button {
 
   .aboutus__item:nth-child(2) {
     margin-top: 50px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .aboutus__btn {
@@ -2449,6 +2463,12 @@ button {
 
   .faq__block {
     width: calc(100% / 1 - 24px);
+  }
+
+  .faq__block-title {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .faq__block-title-text {
@@ -2480,6 +2500,71 @@ button {
 
   .faq__offer-nav-next {
     margin-right: 30px;
+  }
+
+  .contacts {
+    padding: 50px 0 60px;
+  }
+
+  .contacts__wrap {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__colone {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .contacts__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__coltwo {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .contacts__own {
+    text-align: center;
+  }
+
+  .contacts__address {
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  .footer__wrap {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .footer__reserved {
+    margin: 1px auto;
+    font-size: 14px;
+  }
+
+  .footer__cookie-pol {
+    margin: 1px auto;
+    font-size: 14px;
+  }
+
+  .footer__privacy-pol {
+    margin: 1px auto;
+    font-size: 14px;
   }
 }
 
@@ -2673,7 +2758,7 @@ button {
   .faq__item-question {
     font-size: 16px;
     line-height: 20px;
-    padding: 15px 60px 18px 20px;
+    padding: 15px 60px 15px 20px;
   }
 
   .faq__item-ansver {

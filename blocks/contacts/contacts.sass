@@ -1,15 +1,39 @@
 .contacts
   padding: 77px 0 91px
   color: black
+  @media #{$_md}
+    padding: 70px 0 85px
+  @media #{$_sm}
+    padding: 50px 0 60px
+  @media #{$_xs}
   &__wrap
     display: flex
+    @media #{$_md}
+    @media #{$_sm}
+      flex-direction: column-reverse
+    @media #{$_xs}
   &__colone
     width: 50%
     padding-top: 9px
+    @media #{$_md}
+    @media #{$_sm}
+      margin-top: 40px
+      width: 100%
+    @media #{$_xs}
   &__logo
     margin-bottom: 24px
+    @media #{$_md}
+      max-width: 200px
+      margin: 0 auto 20px
+    @media #{$_sm}
+    @media #{$_xs}
   &__text
     max-width: 600px
+    @media #{$_md}
+    @media #{$_sm}
+      margin: 0 auto
+      text-align: center
+    @media #{$_xs}
     &-block
       margin-bottom: 20px
       font-size: 16px
@@ -18,19 +42,42 @@
   &__coltwo
     width: 50%
     padding-left: 63px
+    @media #{$_md}
+    @media #{$_sm}
+      padding-left: 0
+      width: 100%
+    @media #{$_xs}
   &__title
     margin-bottom: 23px
     font-size: 38px
     font-weight: 600
     line-height: 52px
+    @media #{$_md}
+      font-size: 35px
+      line-height: 48px
+    @media #{$_sm}
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 45px
+      text-align: center
+    @media #{$_xs}
   &__own
     margin-top: 14px
     font-size: 16px
     font-weight: 500
     line-height: 22px
+    @media #{$_md}
+    @media #{$_sm}
+      text-align: center
+    @media #{$_xs}
   &__address
     max-width: 299px
     margin-top: 14px
     font-size: 16px
     font-weight: 500
     line-height: 22px
+    @media #{$_md}
+    @media #{$_sm}
+      margin: 8px auto
+      text-align: center
+    @media #{$_xs}
