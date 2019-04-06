@@ -807,6 +807,7 @@ button {
 }
 
 .first-screen__freecons-btn {
+  display: block;
   width: 350px;
   height: 77px;
   margin-top: 45px;
@@ -1230,6 +1231,7 @@ button {
   background-image: url(../img/decor/wichargeback2.jpg);
   background-size: contain;
   background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .wichargeback__purpose-img-wrap {
@@ -1718,11 +1720,14 @@ button {
   max-width: 1016px;
   margin: 0 auto;
   margin-top: 57px;
-  margin-right: -55px;
 }
 
 .request__info-item {
   margin-right: 55px;
+}
+
+.request__info-item:last-child {
+  margin-right: 0;
 }
 
 .request__info-header {
@@ -1995,8 +2000,12 @@ button {
     height: 350px;
   }
 
+  .wichargeback__row:last-child {
+    height: 370px;
+  }
+
   .wichargeback__question-context {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .wichargeback__question-btn {
@@ -2018,6 +2027,7 @@ button {
     width: 260px;
     height: 40px;
     font-size: 14px;
+    margin-bottom: 40px;
   }
 
   .wichargeback-subtitle {
@@ -2034,7 +2044,7 @@ button {
   }
 
   .aboutus__wrap {
-    padding: 70px 0 68px;
+    padding: 68px 0 65px;
   }
 
   .aboutus__title {
@@ -2047,6 +2057,7 @@ button {
   }
 
   .aboutus__item-text-block {
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 25px;
   }
@@ -2330,11 +2341,10 @@ button {
     margin-top: 7px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .features {
-    padding: 50px 0 80px;
+    padding: 50px 0;
   }
 
   .features__title {
@@ -2371,6 +2381,11 @@ button {
     align-self: center;
   }
 
+  .features__item-title {
+    text-align: left;
+    padding-left: 40px;
+  }
+
   .features__item:nth-child(1) {
     border-right: none;
   }
@@ -2398,6 +2413,10 @@ button {
     height: auto;
   }
 
+  .wichargeback__row:last-child {
+    height: auto;
+  }
+
   .wichargeback__question {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -2422,6 +2441,7 @@ button {
   }
 
   .wichargeback__question-context {
+    margin-top: 45px;
     margin-left: 20px;
   }
 
@@ -2430,7 +2450,7 @@ button {
   }
 
   .wichargeback__question-btn {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 16px;
   }
 
@@ -2472,11 +2492,11 @@ button {
   }
 
   .wichargeback__purpose-btn {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .aboutus__wrap {
-    padding: 60px 0 50px;
+    padding: 50px 0;
   }
 
   .aboutus__content {
@@ -2495,17 +2515,53 @@ button {
     width: 100%;
   }
 
+  .aboutus__item-icon {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100px;
+  }
+
+  .aboutus__item-text-block {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
   .aboutus__item-text-block:last-child {
     margin-left: 0;
   }
 
   .aboutus__item:nth-child(2) {
-    margin-top: 50px;
-    padding: 0;
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+
+  .aboutus__footer {
+    height: auto;
   }
 
   .aboutus__btn {
     width: 300px;
+    margin-bottom: 45px;
+  }
+
+  .aboutus-icon-1 {
+    min-width: 100px;
+  }
+
+  .aboutus-icon-1 svg {
+    max-width: 100px;
+  }
+
+  .aboutus-icon-2 {
+    min-width: 100px;
+  }
+
+  .aboutus-icon-2 svg {
+    max-width: 75px;
   }
 
   .faq__wrap {
@@ -2766,6 +2822,20 @@ button {
     height: 350px;
   }
 
+  .first-screen__title {
+    max-width: none;
+    text-align: center;
+  }
+
+  .first-screen__subtitle {
+    text-align: center;
+  }
+
+  .first-screen__freecons-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .qualities__subtitle {
     max-width: 250px;
   }
@@ -2786,6 +2856,7 @@ button {
 
   .features__item-title {
     margin-left: -86px;
+    padding-left: 0;
   }
 
   .features__item-text {
@@ -2833,7 +2904,7 @@ button {
   }
 
   .aboutus__wrap {
-    padding: 40px 0 40px;
+    padding: 40px 0 30px;
   }
 
   .aboutus__title {
@@ -2856,7 +2927,7 @@ button {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 7px;
   }
 
   .aboutus__item-text-block {
@@ -2879,6 +2950,7 @@ button {
 
   .aboutus__btn {
     width: 245px;
+    margin-bottom: 30px;
     padding-left: 35px;
     letter-spacing: normal;
     font-size: 12px;

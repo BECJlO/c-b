@@ -17,6 +17,11 @@
         height: 300px
       @media #{$_sm}
         height: auto
+    &:last-child
+      @media #{$_md}
+        height: 370px
+      @media #{$_sm}
+        height: auto
   &__question
     height: 100%
     display: flex
@@ -59,8 +64,9 @@
       margin-top: 81px
       margin-left: 14.708%
       @media #{$_md}
-        margin-top: 50px
+        margin-top: 40px
       @media #{$_sm}
+        margin-top: 45px
         margin-left: 20px
       @media #{$_xs}
         margin: 45px 20px
@@ -90,7 +96,7 @@
         height: 40px
         font-size: 18px
       @media #{$_sm}
-        margin-bottom: 30px
+        margin-bottom: 40px
         font-size: 16px
       @media #{$_xs}
         margin-left: auto
@@ -116,6 +122,7 @@
       background-image: url(../img/decor/wichargeback2.jpg)
       background-size: contain
       background-position: center left
+      background-repeat: no-repeat
       @media #{$_sm}
         order: 1
         width: calc(100% / 1 + 40px)
@@ -178,8 +185,9 @@
         width: 260px
         height: 40px
         font-size: 14px
+        margin-bottom: 40px
       @media #{$_sm}
-        margin-bottom: 30px
+        margin-bottom: 40px
       @media #{$_xs}
         width: 200px
         margin-left: auto
