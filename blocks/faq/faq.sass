@@ -1,6 +1,12 @@
 .faq
   &__wrap
     padding: 77px 0 84px
+    @media #{$_md}
+      padding: 72px 0 80px
+    @media #{$_sm}
+      padding: 65px 0 70px
+    @media #{$_xs}
+      padding: 45px 0 60px
   &__title
     margin-bottom: 74px
     font-size: 38px
@@ -8,17 +14,43 @@
     letter-spacing: 1.06px
     line-height: 52px
     text-align: center
+    @media #{$_md}
+      margin-bottom: 20px
+      font-size: 35px
+      line-height: 48px
+    @media #{$_sm}
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 42px
+    @media #{$_xs}
+      font-size: 30px
+      line-height: 40px
   &__container
     display: flex
     margin: 0 -12px
+    @media #{$_md}
+      flex-wrap: wrap
+      // justify-content: center
+    @media #{$_sm}
+    @media #{$_xs}
   &__block
     width: calc(100% / 3)
     margin: 0 12px
+    @media #{$_md}
+      margin-top: 40px
+      width: calc(100% / 1 - 24px)
+    @media #{$_sm}
+      width: calc(100% / 1 - 24px)
+    @media #{$_xs}
     &-title
       display: flex
       align-items: center
       min-height: 87px
       margin-bottom: 23px
+      @media #{$_md}
+        margin-bottom: 10px
+      @media #{$_sm}
+      @media #{$_xs}
       &-icon
         margin-right: 25px
         padding-bottom: 12px
@@ -27,6 +59,13 @@
         font-size: 24px
         font-weight: 600
         line-height: 33px
+        @media #{$_md}
+          font-size: 22px
+          line-height: 29px
+        @media #{$_sm}
+          font-size: 20px
+          line-height: 25px
+        @media #{$_xs}
   &__item
     margin-bottom: 8px
     border: 2px solid rgba(244,245,249,1)
@@ -39,12 +78,26 @@
       font-size: 20px
       font-weight: 600
       line-height: 27px
+      @media #{$_md}
+      @media #{$_sm}
+        font-size: 18px
+        line-height: 25px
+      @media #{$_xs}
+        font-size: 16px
+        line-height: 20px
+        padding: 15px 60px 18px 20px
     &-ansver
       padding: 7px 16px 24px 32px
       display: none
       font-size: 16px
       font-weight: 500
       line-height: 22px
+      @media #{$_md}
+      @media #{$_sm}
+        font-size: 14px
+        line-height: 20px
+      @media #{$_xs}
+        padding: 2px 15px 24px 20px
     &-arrow
       position: absolute
       display: block
