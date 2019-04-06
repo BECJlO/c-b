@@ -1368,7 +1368,7 @@ button {
 
 .aboutus__btn-icon {
   position: absolute;
-  bottom: -8px;
+  bottom: -9px;
   left: -30px;
 }
 
@@ -1377,7 +1377,7 @@ button {
 }
 
 .aboutus-icon-2 {
-  min-width: 111px;
+  min-width: 142px;
 }
 
 .faq__wrap {
@@ -2032,6 +2032,28 @@ button {
     line-height: 18px;
   }
 
+  .aboutus__wrap {
+    padding: 70px 0 68px;
+  }
+
+  .aboutus__title {
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .aboutus__item-icon {
+    margin-right: 28px;
+  }
+
+  .aboutus__item-text-block {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .aboutus__btn {
+    font-size: 14px;
+  }
+
   .faq__offer-slide {
     font-size: 16px;
   }
@@ -2075,6 +2097,12 @@ button {
 
   .wichargeback__row:first-child {
     height: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutus__item-text-block:last-child {
+    margin-left: -170px;
   }
 }
 
@@ -2346,6 +2374,39 @@ button {
     margin-bottom: 30px;
   }
 
+  .aboutus__wrap {
+    padding: 60px 0 50px;
+  }
+
+  .aboutus__content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .aboutus__title {
+    margin-bottom: 45px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .aboutus__item {
+    width: 100%;
+  }
+
+  .aboutus__item-text-block:last-child {
+    margin-left: 0;
+  }
+
+  .aboutus__item:nth-child(2) {
+    margin-top: 50px;
+    padding: 0 40px;
+  }
+
+  .aboutus__btn {
+    width: 300px;
+  }
+
   .faq__offer-container {
     width: calc(100% / 1 - 150px);
   }
@@ -2483,5 +2544,61 @@ button {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .aboutus__wrap {
+    padding: 40px 0 40px;
+  }
+
+  .aboutus__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .aboutus__item {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+
+  .aboutus__item-icon {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+
+  .aboutus__item-text-block {
+    text-align: center;
+  }
+
+  .aboutus__footer {
+    padding-top: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .aboutus__footer-text {
+    margin-bottom: 20px;
+  }
+
+  .aboutus__btn {
+    width: 245px;
+    padding-left: 35px;
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+
+  .aboutus__btn-icon {
+    left: -20px;
   }
 }
