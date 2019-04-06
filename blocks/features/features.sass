@@ -2,6 +2,11 @@
   padding: 75px 0 105px
   background-color: #373C75
   color: white
+  @media #{$_md}
+    padding: 65px 0 90px
+  @media #{$_sm}
+    padding: 50px 0 80px
+  @media #{$_xs}
   &__wrap
   &__title
     margin-bottom: 40px
@@ -11,6 +16,8 @@
     line-height: 52px
     text-align: center
     color: white
+    @media #{$_sm}
+      margin-bottom: 20px
   &__freecons-btn
     display: block
     height: 45px
@@ -23,18 +30,40 @@
     letter-spacing: 0.87px
     line-height: 27px
     text-transform: uppercase
+    @media #{$_md}
+      width: 260px
+      height: 40px
+      font-size: 14px
+    @media #{$_sm}
+      margin-top: 20px
+    @media #{$_xs}
+      width: 200px
+      margin-left: auto
+      margin-right: auto
   &__list
     &-wrap
       display: flex
       flex-wrap: wrap
+      @media #{$_sm}
+        flex-direction: column
+      @media #{$_xs}
   &__item
     display: flex
     width: 50%
     height: 159px
-    padding-top: 10px
+    padding: 10px 0 20px
     justify-content: flex-start
     align-items: flex-start
+    @media #{$_md}
+      height: auto
+    @media #{$_sm}
+      justify-content: center
+      width: 100%
+      padding-top: 45px
+      padding-bottom: 30px
     &-content
+      @media #{$_sm}
+        width: 70%
     &-icon
       display: flex
       width: 62px
@@ -42,6 +71,11 @@
       margin-right: 20px
       justify-content: center
       align-items: center
+      @media #{$_sm}
+        align-self: center
+      @media #{$_xs}
+        align-self: auto
+        margin-top: 50px
     &-title
       margin-top: 0
       margin-bottom: 10px
@@ -49,27 +83,46 @@
       font-weight: 600
       line-height: 33px
       color: white
+      @media #{$_sm}
+      @media #{$_xs}
+        margin-left: -86px
     &-text
-      max-width: 488px
+      max-width: 508px
       font-size: 16px
       font-weight: 500
       line-height: 22px
+      padding-right: 20px
       color: white
+      @media #{$_md}
+        font-size: 14px
+        line-height: 20px
+      @media #{$_sm}
+      @media #{$_xs}
+        padding-right: 0
     &:nth-child(1)
       border-right: 1px solid #313569
       border-bottom: 1px solid #313569
+      @media #{$_sm}
+        // padding-top: 45px
+        border-right: none
       & .features__item-text
         max-width: 415px
     &:nth-child(2)
       padding-left: 32px
       border-bottom: 1px solid #313569
       border-left: 1px solid #313569
+      @media #{$_sm}
+        padding-left: 0
+        border-left: none
+        border-top: 1px solid #313569
       & .features__item-text
         max-width: 522px
     &:nth-child(3n)
       padding-top: 45px
       border-top: 1px solid #313569
       border-right: 1px solid #313569
+      @media #{$_sm}
+        border-right: none
       & .features__item-text
         max-width: 484px
     &:nth-child(4n)
@@ -77,6 +130,9 @@
       padding-left: 32px
       border-top: 1px solid #313569
       border-left: 1px solid #313569
+      @media #{$_sm}
+        padding-left: 0
+        border-left: none
       & .features__item-text
         max-width: 430px
 

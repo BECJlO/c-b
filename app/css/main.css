@@ -1054,7 +1054,7 @@ button {
   display: flex;
   width: 50%;
   height: 159px;
-  padding-top: 10px;
+  padding: 10px 0 20px;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1088,10 +1088,11 @@ button {
 }
 
 .features__item-text {
-  max-width: 488px;
+  max-width: 508px;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  padding-right: 20px;
   color: white;
 }
 
@@ -1970,6 +1971,25 @@ button {
     line-height: 20px;
   }
 
+  .features {
+    padding: 65px 0 90px;
+  }
+
+  .features__freecons-btn {
+    width: 260px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .features__item {
+    height: auto;
+  }
+
+  .features__item-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .wichargeback__row {
     height: 350px;
   }
@@ -2185,6 +2205,63 @@ button {
     text-align: center;
   }
 
+  .features {
+    padding: 50px 0 80px;
+  }
+
+  .features__title {
+    margin-bottom: 20px;
+  }
+
+  .features__freecons-btn {
+    margin-top: 20px;
+  }
+
+  .features__list-wrap {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .features__item {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  .features__item-content {
+    width: 70%;
+  }
+
+  .features__item-icon {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .features__item:nth-child(1) {
+    border-right: none;
+  }
+
+  .features__item:nth-child(2) {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid #313569;
+  }
+
+  .features__item:nth-child(3n) {
+    border-right: none;
+  }
+
+  .features__item:nth-child(4n) {
+    padding-left: 0;
+    border-left: none;
+  }
+
   .wichargeback__row {
     height: auto;
   }
@@ -2344,6 +2421,28 @@ button {
 
   .qualities__subtitle {
     max-width: 250px;
+  }
+
+  .features__freecons-btn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features__item-icon {
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    margin-top: 50px;
+  }
+
+  .features__item-title {
+    margin-left: -86px;
+  }
+
+  .features__item-text {
+    padding-right: 0;
   }
 
   .wichargeback__question-img {
